@@ -12,6 +12,10 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
+	<key>Pirvacy - Camera Usage Description</key>
+	<string>$(PRODUCT_NAME) Camera use</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>UIImagePickerController or PHPhotoLibrary requestAuthorization: used in conjunction with any of the following classes: PHAsset PHAssetCollection PHCollection PHCollectionList</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>

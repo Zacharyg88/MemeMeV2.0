@@ -48,12 +48,15 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         unsubcribeToKeyboardNotificaitons()
         
     }
+  
+    
     
     let memeTextAttributes:[String:Any] = [
         NSStrokeColorAttributeName: UIColor.black,
         NSForegroundColorAttributeName: UIColor.white,
         NSFontAttributeName: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
         NSStrokeWidthAttributeName: Float(-3.0)]
+    
     struct Meme {
         var topText: String
         var bottomText: String
@@ -81,14 +84,13 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func shareMeme (sender: AnyObject) {
         func generateMeme () -> (UIImage) {
             toolbar?.isHidden = true
-            //            sharebutton?.isHidden = true
             UIGraphicsBeginImageContext(self.view.frame.size)
             view.drawHierarchy(in: (self.view.frame), afterScreenUpdates: true)
             let memedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
             UIGraphicsEndImageContext()
             
             toolbar?.isHidden = false
-            //sharebutton?.isHidden = false
+           
             
             print(memeArray)
             
@@ -105,9 +107,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         activityController.completionWithItemsHandler = {(type: UIActivityType?, completed: Bool, returnedItems:[Any]?, error: Error?) in
             
-            self.memeArray.append(Meme(topText: (self.topText?.text!)!, bottomText: (self.bottomText?.text!)!, originalImage: (self.imageView?.image!)!, memedImage: memedImage))
-            print(self.memeArray)
-            
+//            self.memeArray.append(Meme(topText: (self.topText?.text!)!, bottomText: (self.bottomText?.text!)!, originalImage: (self.imageView?.image!)!, memedImage: memedImage))
+//            print(self.memeArray)
+            func save() {
+                let meme = Meme(topText: (self.topText?.text)!, bottomText: (self.bottomText?.text)!, originalImage: (self.imageView?.image)!, memedImage: memedImage)
+                
+                let object = UIApplication.shared.delegate
+                let appDelegate = object as! AppDelegate
+                appDelegate.memes.append(meme)
+                print(appDelegate.memes)
+            }
+            save()
             
         }
         
@@ -168,5 +178,5 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 
 
 
-}
+
 
