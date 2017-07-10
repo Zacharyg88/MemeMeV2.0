@@ -57,14 +57,14 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         NSFontAttributeName: UIFont(name: "HelveticaNeue-CondensedBlack", size: 40)!,
         NSStrokeWidthAttributeName: Float(-3.0)]
     
-    struct Meme {
-        var topText: String
-        var bottomText: String
-        var originalImage: UIImage
-        var memedImage: UIImage
-        
-    }
-    var memeArray = [Meme]()
+//    struct Meme {
+//        var topText: String
+//        var bottomText: String
+//        var originalImage: UIImage
+//        var memedImage: UIImage
+//        
+//    }
+    
     
     func chooseSourceType(source: UIImagePickerControllerSourceType){
         let picker = UIImagePickerController()
@@ -92,7 +92,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             toolbar?.isHidden = false
            
             
-            print(memeArray)
+            //print(memeArray)
             
             return memedImage
         }
@@ -110,7 +110,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
 //            self.memeArray.append(Meme(topText: (self.topText?.text!)!, bottomText: (self.bottomText?.text!)!, originalImage: (self.imageView?.image!)!, memedImage: memedImage))
 //            print(self.memeArray)
             func save() {
-                let meme = Meme(topText: (self.topText?.text)!, bottomText: (self.bottomText?.text)!, originalImage: (self.imageView?.image)!, memedImage: memedImage)
+                let meme = AppDelegate.Meme(topText: (self.topText?.text)!, bottomText: (self.bottomText?.text)!, originalImage: (self.imageView?.image)!, memedImage: memedImage)
                 
                 let object = UIApplication.shared.delegate
                 let appDelegate = object as! AppDelegate

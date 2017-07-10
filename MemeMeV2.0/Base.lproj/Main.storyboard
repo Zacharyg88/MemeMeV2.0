@@ -31,8 +31,17 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bottom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hl-2Y-F8V">
+                                <rect key="frame" x="22" y="538" width="334" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="fnC-wd-yf3"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
+                            </textField>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HDd-Q4-fmy">
-                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="615" width="375" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="FKS-HB-QBW"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="pbi-l1-kTa"/>
@@ -49,6 +58,11 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="9FZ-ad-vOV"/>
+                                    <barButtonItem title="Dismiss" id="JVO-uO-uuk">
+                                        <connections>
+                                            <segue destination="ilZ-RI-MBc" kind="show" id="0SL-Fk-uMc"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="action" id="GqB-dn-jIE">
                                         <connections>
                                             <action selector="shareMemeWithSender:" destination="BYZ-38-t0r" id="rfO-Ai-mZn"/>
@@ -56,15 +70,6 @@
                                     </barButtonItem>
                                 </items>
                             </toolbar>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Bottom" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8hl-2Y-F8V">
-                                <rect key="frame" x="22" y="538" width="334" height="53"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="53" id="fnC-wd-yf3"/>
-                                </constraints>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters"/>
-                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -73,11 +78,11 @@
                             <constraint firstItem="8hl-2Y-F8V" firstAttribute="bottom" secondItem="psa-NI-iTc" secondAttribute="bottom" constant="-32" id="8iG-Au-dPJ"/>
                             <constraint firstAttribute="trailing" secondItem="HDd-Q4-fmy" secondAttribute="trailing" id="935-m5-dKV"/>
                             <constraint firstItem="8hl-2Y-F8V" firstAttribute="trailing" secondItem="psa-NI-iTc" secondAttribute="trailing" constant="-19" id="N3A-UE-UCw"/>
-                            <constraint firstItem="psa-NI-iTc" firstAttribute="bottom" secondItem="HDd-Q4-fmy" secondAttribute="top" id="Thn-fa-uce"/>
+                            <constraint firstItem="psa-NI-iTc" firstAttribute="bottom" secondItem="HDd-Q4-fmy" secondAttribute="top" constant="8" id="Thn-fa-uce"/>
                             <constraint firstItem="HDd-Q4-fmy" firstAttribute="leading" secondItem="s9Z-0j-z3I" secondAttribute="leading" id="cDA-hb-Oey"/>
                             <constraint firstItem="8hl-2Y-F8V" firstAttribute="leading" secondItem="psa-NI-iTc" secondAttribute="leading" constant="22" id="dpU-G8-F6F"/>
                             <constraint firstItem="aPS-el-8XQ" firstAttribute="top" secondItem="psa-NI-iTc" secondAttribute="top" constant="59" id="lea-0I-jVa"/>
-                            <constraint firstItem="HDd-Q4-fmy" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="rzO-Yq-PVt"/>
+                            <constraint firstItem="HDd-Q4-fmy" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" constant="-8" id="rzO-Yq-PVt"/>
                             <constraint firstItem="aPS-el-8XQ" firstAttribute="leading" secondItem="psa-NI-iTc" secondAttribute="leading" constant="22" id="uYh-CK-Ubx"/>
                             <constraint firstItem="psa-NI-iTc" firstAttribute="top" secondItem="s9Z-0j-z3I" secondAttribute="top" id="yGK-Py-x1y"/>
                             <constraint firstItem="HDd-Q4-fmy" firstAttribute="leading" secondItem="psa-NI-iTc" secondAttribute="leading" id="zBm-U7-42P"/>
@@ -115,11 +120,11 @@
             </objects>
             <point key="canvasLocation" x="-1015" y="445"/>
         </scene>
-        <!--Item-->
+        <!--List-->
         <scene sceneID="hCh-dQ-6ih">
             <objects>
                 <navigationController id="LcD-hO-d86" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Y89-bh-2w4"/>
+                    <tabBarItem key="tabBarItem" title="List" id="Y89-bh-2w4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="U6d-sa-mAe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -132,11 +137,11 @@
             </objects>
             <point key="canvasLocation" x="6" y="357"/>
         </scene>
-        <!--Item-->
+        <!--Grid-->
         <scene sceneID="dCU-kO-cr8">
             <objects>
                 <navigationController id="7wM-eK-Sve" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="Ofa-bW-ndb"/>
+                    <tabBarItem key="tabBarItem" title="Grid" id="Ofa-bW-ndb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="thW-Xi-K5k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -182,11 +187,16 @@
                         <connections>
                             <outlet property="dataSource" destination="XBU-pp-f6D" id="dRd-kZ-cZV"/>
                             <outlet property="delegate" destination="XBU-pp-f6D" id="GxF-cQ-UKc"/>
-                            <outlet property="sentMemeImageView" destination="amT-lJ-ipt" id="C7f-lg-tDt"/>
                         </connections>
                     </collectionView>
                     <tabBarItem key="tabBarItem" title="Grid" id="FdA-qg-MHi"/>
-                    <navigationItem key="navigationItem" id="TTv-jX-u01"/>
+                    <navigationItem key="navigationItem" id="TTv-jX-u01">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="lE5-sH-GSr">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="vlh-Fe-5nu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RZO-Gj-4p8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -195,7 +205,7 @@
         <!--SentMemeTableVC-->
         <scene sceneID="OX7-lS-hxt">
             <objects>
-                <tableViewController title="SentMemeTableVC" id="SR5-Le-akl" sceneMemberID="viewController">
+                <tableViewController title="SentMemeTableVC" id="SR5-Le-akl" customClass="SentMemesTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="vYZ-jU-Eii">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -205,7 +215,7 @@
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mor-KX-WyB" id="ddm-Sd-s0p">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -216,11 +226,20 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Cell" id="h8v-QS-hjs"/>
-                    <navigationItem key="navigationItem" id="l1J-EM-29I"/>
+                    <navigationItem key="navigationItem" id="l1J-EM-29I">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="F2f-gk-2LU">
+                            <connections>
+                                <segue destination="BYZ-38-t0r" kind="presentation" id="lGm-3Q-SNf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thh-PT-PNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="822" y="357"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="lGm-3Q-SNf"/>
+    </inferredMetricsTieBreakers>
 </document>

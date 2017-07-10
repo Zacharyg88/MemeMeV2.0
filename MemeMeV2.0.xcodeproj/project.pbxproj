@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		92C642E21F0FE68F004FEF9C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C642E11F0FE68F004FEF9C /* AppDelegate.swift */; };
 		92C642E41F0FE68F004FEF9C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C642E31F0FE68F004FEF9C /* ViewController.swift */; };
-		92C642E71F0FE68F004FEF9C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C642E51F0FE68F004FEF9C /* Main.storyboard */; };
 		92C642E91F0FE68F004FEF9C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C642E81F0FE68F004FEF9C /* Assets.xcassets */; };
 		92C642EC1F0FE68F004FEF9C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C642EA1F0FE68F004FEF9C /* LaunchScreen.storyboard */; };
 		92C642F41F0FE7CF004FEF9C /* TextDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C642F31F0FE7CF004FEF9C /* TextDelegate.swift */; };
 		92C642F61F0FF94E004FEF9C /* SentMemesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C642F51F0FF94E004FEF9C /* SentMemesCollectionViewController.swift */; };
+		92C642F81F13C9E4004FEF9C /* SentMemesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C642F71F13C9E4004FEF9C /* SentMemesTableViewController.swift */; };
+		92CB13EC1F13ED5900BA0D39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92CB13EA1F13ED5900BA0D39 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92C642DE1F0FE68F004FEF9C /* MemeMeV2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemeMeV2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C642E11F0FE68F004FEF9C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C642E31F0FE68F004FEF9C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		92C642E61F0FE68F004FEF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		92C642E81F0FE68F004FEF9C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		92C642EB1F0FE68F004FEF9C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		92C642ED1F0FE68F004FEF9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92C642F31F0FE7CF004FEF9C /* TextDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextDelegate.swift; sourceTree = "<group>"; };
 		92C642F51F0FF94E004FEF9C /* SentMemesCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentMemesCollectionViewController.swift; sourceTree = "<group>"; };
+		92C642F71F13C9E4004FEF9C /* SentMemesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SentMemesTableViewController.swift; sourceTree = "<group>"; };
+		92CB13EB1F13ED5900BA0D39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MemeMeV2.0/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,9 @@
 				92C642E11F0FE68F004FEF9C /* AppDelegate.swift */,
 				92C642E31F0FE68F004FEF9C /* ViewController.swift */,
 				92C642F31F0FE7CF004FEF9C /* TextDelegate.swift */,
-				92C642E51F0FE68F004FEF9C /* Main.storyboard */,
+				92CB13EA1F13ED5900BA0D39 /* Main.storyboard */,
 				92C642F51F0FF94E004FEF9C /* SentMemesCollectionViewController.swift */,
+				92C642F71F13C9E4004FEF9C /* SentMemesTableViewController.swift */,
 				92C642E81F0FE68F004FEF9C /* Assets.xcassets */,
 				92C642EA1F0FE68F004FEF9C /* LaunchScreen.storyboard */,
 				92C642ED1F0FE68F004FEF9C /* Info.plist */,
@@ -129,9 +132,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92CB13EC1F13ED5900BA0D39 /* Main.storyboard in Resources */,
 				92C642EC1F0FE68F004FEF9C /* LaunchScreen.storyboard in Resources */,
 				92C642E91F0FE68F004FEF9C /* Assets.xcassets in Resources */,
-				92C642E71F0FE68F004FEF9C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +148,7 @@
 				92C642F41F0FE7CF004FEF9C /* TextDelegate.swift in Sources */,
 				92C642E41F0FE68F004FEF9C /* ViewController.swift in Sources */,
 				92C642F61F0FF94E004FEF9C /* SentMemesCollectionViewController.swift in Sources */,
+				92C642F81F13C9E4004FEF9C /* SentMemesTableViewController.swift in Sources */,
 				92C642E21F0FE68F004FEF9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,20 +156,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		92C642E51F0FE68F004FEF9C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				92C642E61F0FE68F004FEF9C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		92C642EA1F0FE68F004FEF9C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				92C642EB1F0FE68F004FEF9C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		92CB13EA1F13ED5900BA0D39 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				92CB13EB1F13ED5900BA0D39 /* Base */,
+			);
+			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -307,6 +312,7 @@
 				92C642F21F0FE68F004FEF9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
