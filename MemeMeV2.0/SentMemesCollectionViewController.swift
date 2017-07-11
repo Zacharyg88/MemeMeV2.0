@@ -9,9 +9,8 @@
 import UIKit
 class SentMemesCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
-    @IBOutlet weak var sentMemeImageView: UIImageView!
     let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
-
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return appDelegate.memes.count
@@ -19,11 +18,11 @@ class SentMemesCollectionViewController: UIViewController, UICollectionViewDeleg
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GridMeme", for: indexPath) 
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GridMeme", for: indexPath) as! SentMemeCollectionViewCell
         
-        let image = appDelegate.memes [(indexPath as NSIndexPath).item]
+        let image = appDelegate.memes [(indexPath as NSIndexPath).row]
         
-        sentMemeImageView.image = image.memedImage
+        cell.collectionImageView.image = image.memedImage
         
         return cell
     }

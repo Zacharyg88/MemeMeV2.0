@@ -24,7 +24,9 @@ class SentMemesTableViewController: UIViewController, UITableViewDelegate, UITab
         
         return cell
     }
-    
+    func printcheck() {
+        print(appDelegate.memes)
+    }
 }
 
 
