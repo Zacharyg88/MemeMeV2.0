@@ -157,8 +157,8 @@
         <!--SentMemeCollectionVC-->
         <scene sceneID="XZd-bb-rQg">
             <objects>
-                <collectionViewController title="SentMemeCollectionVC" id="XBU-pp-f6D" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Rus-vs-Tzg" customClass="SentMemesCollectionViewController">
+                <collectionViewController title="SentMemeCollectionVC" id="XBU-pp-f6D" customClass="SentMemesCollectionViewController" customModule="MemeMeV2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="Rus-vs-Tzg" customClass="SentMemesCollectionViewController">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -239,10 +239,10 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Thh-PT-PNx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="822" y="357"/>
+            <point key="canvasLocation" x="821.60000000000002" y="356.67166416791605"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="vlh-Fe-5nu"/>
+        <segue reference="lGm-3Q-SNf"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,17 +7,21 @@
 //
 
 import UIKit
-class SentMemesCollectionViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class SentMemesCollectionViewController: UICollectionViewController {
     
     let appDelegate = (UIApplication.shared.delegate as! AppDelegate)
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func viewDidAppear(_ animated: Bool) {
+    collectionView?.reloadData()
+    }
+    
+    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         return appDelegate.memes.count
     }
     
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GridMeme", for: indexPath) as! SentMemeCollectionViewCell
         
         let image = appDelegate.memes [(indexPath as NSIndexPath).row]
