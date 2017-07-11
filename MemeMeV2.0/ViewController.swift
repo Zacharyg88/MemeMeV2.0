@@ -17,6 +17,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var bottomText: UITextField?
     @IBOutlet weak var sharebutton: UIBarButtonItem?
     @IBOutlet weak var toolbar: UIToolbar?
+    @IBOutlet weak var navBar: UINavigationBar?
     
     
     
@@ -84,11 +85,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBAction func shareMeme (sender: AnyObject) {
         func generateMeme () -> (UIImage) {
             toolbar?.isHidden = true
+            navBar?.isHidden = true
             UIGraphicsBeginImageContext(self.view.frame.size)
             view.drawHierarchy(in: (self.view.frame), afterScreenUpdates: true)
             let memedImage:UIImage = UIGraphicsGetImageFromCurrentImageContext()!
             UIGraphicsEndImageContext()
-            
+            navBar?.isHidden = false
             toolbar?.isHidden = false
            
             
