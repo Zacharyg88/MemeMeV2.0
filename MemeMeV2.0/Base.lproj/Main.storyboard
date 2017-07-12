@@ -114,7 +114,7 @@
         <!--Meme Detail View Controller-->
         <scene sceneID="wUK-IK-Sdv">
             <objects>
-                <viewController storyboardIdentifier="MemeDetailViewController" id="iqn-Z0-4j7" customClass="MemeDetailViewController" customModule="MemeMeV2_0" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MemeDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iqn-Z0-4j7" customClass="MemeDetailViewController" customModule="MemeMeV2_0" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fse-hv-R1z"/>
                         <viewControllerLayoutGuide type="bottom" id="stt-hT-iv2"/>
