@@ -31,6 +31,13 @@ class SentMemesTableViewController: UITableViewController {
     func printcheck() {
         print(appDelegate.memes)
     }
+    
+    override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let memeDetail = self.storyboard?.instantiateViewController(withIdentifier: "MemeDetailViewController") as! MemeDetailViewController
+        memeDetail.meme = self.appDelegate.memes [(indexPath as NSIndexPath).row].memedImage
+        print("Detail")
+        self.navigationController?.pushViewController(memeDetail, animated: true)
+    }
 }
 
 

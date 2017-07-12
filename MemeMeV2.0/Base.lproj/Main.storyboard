@@ -111,6 +111,38 @@
             </objects>
             <point key="canvasLocation" x="5.5999999999999996" y="-345.87706146926541"/>
         </scene>
+        <!--Meme Detail View Controller-->
+        <scene sceneID="wUK-IK-Sdv">
+            <objects>
+                <viewController storyboardIdentifier="MemeDetailViewController" id="iqn-Z0-4j7" customClass="MemeDetailViewController" customModule="MemeMeV2_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="fse-hv-R1z"/>
+                        <viewControllerLayoutGuide type="bottom" id="stt-hT-iv2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gv9-6b-3fO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="edK-uu-a6e">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="edK-uu-a6e" firstAttribute="top" secondItem="fse-hv-R1z" secondAttribute="bottom" id="M7C-r6-TN6"/>
+                            <constraint firstItem="edK-uu-a6e" firstAttribute="leading" secondItem="gv9-6b-3fO" secondAttribute="leadingMargin" id="SGO-hS-Rzw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="edK-uu-a6e" secondAttribute="trailing" id="Tjp-P4-JSb"/>
+                            <constraint firstItem="stt-hT-iv2" firstAttribute="top" secondItem="edK-uu-a6e" secondAttribute="bottom" id="me0-4S-8Ya"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="memeDetailImageView" destination="edK-uu-a6e" id="1U8-Dq-fVu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PsX-GB-fbG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="822" y="-346"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="oi9-kw-jeC">
             <objects>

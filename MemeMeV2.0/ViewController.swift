@@ -29,6 +29,8 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         super.viewDidLoad()
         camera?.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         
+        sharebutton?.isEnabled = false
+        
         func configure (textfield: UITextField) {
             textfield.defaultTextAttributes = memeTextAttributes
             textfield.textAlignment = .center
@@ -37,6 +39,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         configure(textfield: topText!)
         configure(textfield: bottomText!)
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -50,7 +53,6 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
     }
   
-    
     
     let memeTextAttributes:[String:Any] = [
         NSStrokeColorAttributeName: UIColor.black,
@@ -109,8 +111,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         
         activityController.completionWithItemsHandler = {(type: UIActivityType?, completed: Bool, returnedItems:[Any]?, error: Error?) in
             
-//            self.memeArray.append(Meme(topText: (self.topText?.text!)!, bottomText: (self.bottomText?.text!)!, originalImage: (self.imageView?.image!)!, memedImage: memedImage))
-//            print(self.memeArray)
+
             func save() {
                 let meme = AppDelegate.Meme(topText: (self.topText?.text)!, bottomText: (self.bottomText?.text)!, originalImage: (self.imageView?.image)!, memedImage: memedImage)
                 
@@ -132,6 +133,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         dismiss(animated: true, completion: nil)
         if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
             imageView?.image = image
+            sharebutton?.isEnabled = true
         }
     }
     
