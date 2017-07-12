@@ -18,6 +18,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     @IBOutlet weak var sharebutton: UIBarButtonItem?
     @IBOutlet weak var toolbar: UIToolbar?
     @IBOutlet weak var navBar: UINavigationBar?
+    @IBOutlet weak var dismissButton: UIBarButtonItem?
     
     
     
@@ -76,7 +77,9 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         chooseSourceType(source: .camera)
     }
     
-    
+    @IBAction func dismissMemeEditor (sender: AnyObject) {
+        dismiss(animated: true, completion: nil)
+    }
     @IBAction func shareMeme (sender: AnyObject) {
         func generateMeme () -> (UIImage) {
             toolbar?.isHidden = true

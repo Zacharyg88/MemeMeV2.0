@@ -61,7 +61,7 @@
                                     <navigationItem title="Meme Editor" id="RRG-Oh-iKg">
                                         <barButtonItem key="leftBarButtonItem" title="Dismiss" id="JVO-uO-uuk">
                                             <connections>
-                                                <segue destination="ilZ-RI-MBc" kind="show" id="0SL-Fk-uMc"/>
+                                                <action selector="dismissMemeEditorWithSender:" destination="BYZ-38-t0r" id="vRl-xo-4CO"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" systemItem="action" id="GqB-dn-jIE">
@@ -99,6 +99,7 @@
                     <connections>
                         <outlet property="bottomText" destination="8hl-2Y-F8V" id="GNN-rC-sQ7"/>
                         <outlet property="camera" destination="DOx-xS-SrW" id="fOc-eI-ikB"/>
+                        <outlet property="dismissButton" destination="JVO-uO-uuk" id="sqO-q0-MrO"/>
                         <outlet property="imageView" destination="psa-NI-iTc" id="x3s-bK-ERC"/>
                         <outlet property="navBar" destination="EYa-5W-3ze" id="fjn-Tz-zoQ"/>
                         <outlet property="picker" destination="7kg-x1-JV6" id="dbc-Ku-2aO"/>
