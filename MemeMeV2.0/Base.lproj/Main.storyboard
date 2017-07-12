@@ -166,7 +166,7 @@
         <scene sceneID="hCh-dQ-6ih">
             <objects>
                 <navigationController id="LcD-hO-d86" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="List" id="Y89-bh-2w4"/>
+                    <tabBarItem key="tabBarItem" title="List" image="table_30x30" id="Y89-bh-2w4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="U6d-sa-mAe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -183,7 +183,7 @@
         <scene sceneID="dCU-kO-cr8">
             <objects>
                 <navigationController id="7wM-eK-Sve" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Grid" id="Ofa-bW-ndb"/>
+                    <tabBarItem key="tabBarItem" title="Grid" image="collection_30x30" id="Ofa-bW-ndb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="thW-Xi-K5k">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -284,6 +284,10 @@
             <point key="canvasLocation" x="821.60000000000002" y="356.67166416791605"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="collection_30x30" width="30" height="30"/>
+        <image name="table_30x30" width="30" height="30"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lGm-3Q-SNf"/>
     </inferredMetricsTieBreakers>
